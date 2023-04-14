@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <h1> PROGRAMA - CALCULAR LA MEDIA DE LAS EDADES DE UNA FAMILIA. </h1>
+  
+<script>
+
+  function saltarLinea() {
+
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+
+   
+  }
+
+  function imprimir(frase) {
+
+    document.write(frase);
+    saltarLinea();
+
+  }
+
+  var numeroMiembros = parseInt(prompt("Ingrese la cantidad de miembros de su familia"));
+  var contador = 1;
+  var totalEdades = 0
+
+  while (contador <= numeroMiembros) {
+     
+    
+     edad = parseInt(prompt("Ingrese la edad del familiar"));
+     totalEdades = totalEdades + edad;
+    
+     contador ++;
+  
+  }
+
+  mediaEdades = totalEdades/numeroMiembros;
+
+  imprimir ("La media de las edades de la familia es: " + mediaEdades);
+  imprimir (totalEdades)
+  imprimir ("FIN")
+
+
+</script>  
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>
